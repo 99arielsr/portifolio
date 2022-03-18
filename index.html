@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ariel rodrigues</title>
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <link href="./fontawesome/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="./assets/images/logo.svg" alt=" Logo Ariel Rodriuges" class="logo">
+    </div>
+    <ul>
+      <li>
+        <a target="_blank" href="https://github.com/99arielsr">github</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.linkedin.com/in/arielsr/">linkedin</a>
+      </li>
+      <li>
+        <a target="_blank" href="mailto:arielrodrigues.dev@gmail.com">email</a>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <section class="container">
+      <div>
+        <h1 class="name">Ariel Rodrigues</h1>
+        <h2>Desenvolvedor FullStack</h2>
+      </div>
+
+      <div onclick="displayAbout()" id="arrow">
+        <i id="animation" class="fa-solid fa-sort-down"></i>
+      </div>
+
+      <div style="display: none;" id="about">
+        <p>Olá :)
+          <br>
+          Meu nome é Ariel, tenho 22 anos e sou um Desenvolvedor FullStack em formação. Sou estudante da <a class="curso" href="https://gama.academy" target="_blank">Gama Academy</a> e <a class="curso" href="https://www.origamid.com/" target="_blank">Origamid</a>, estou me dedicando diariamente para adquirir o conhecimento necessário para me iniciar a minha carreira digital.
+        </p>
+      </div>
+
+      <div class="form">
+        <div>
+          <p>Deixe seu contato!</p>
+        </div>
+        <form action="">
+          <input type="text" placeholder="seu melhor email">
+          <button>enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function displayAbout() {
+      var arrow = document.getElementById('animation');
+      arrow.classList.toggle('rotate');
+      var display = document.getElementById('about');
+      display.classList.toggle('active');
+    }
+  </script>
+
+</body>
+
+</html>
